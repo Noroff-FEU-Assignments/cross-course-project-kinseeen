@@ -1,5 +1,23 @@
-body {
+body.home {
   background-image: url("../Images/BackgroundPhoto.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.form_input {
+  display: block;
+}
+
+.textarea {
+  position: center;
+  float: left;
+  height: 250px;
+  width: 250px;
+}
+
+body.pages {
+  background-color: white;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -97,6 +115,12 @@ svg.hamburger {
   #toggle:checked ~ .menubar-dropdown {
     top: 0vh;
   }
+
+  .textarea {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+  }
 }
 
 ul {
@@ -118,7 +142,7 @@ ul {
   width: 15%;
   height: 50%;
   background: #7f9f8d;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 li a {
@@ -143,6 +167,7 @@ a:hover {
   color: #103444;
   text-align: center;
   padding-top: 32px;
+  padding-bottom: 5px;
   text-decoration: none;
   font-size: 75px;
   font-family: Verdana, Tahoma, sans-serif;
