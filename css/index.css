@@ -1,0 +1,160 @@
+body {
+  background-image: url("../Images/BackgroundPhoto.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.logoimage {
+  height: 200px;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+header {
+  background-color: #7f9f8d;
+  min-height: 20px;
+  margin-top: -20px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+label[for="toggle"] {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  color: 10344;
+  z-index: 6;
+  font-size: 30px;
+}
+
+.menubar-dropdown {
+  display: none;
+}
+#toggle {
+  display: none;
+}
+svg.hamburger {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .menubar {
+    display: none;
+  }
+
+  .logoimage {
+    height: 200px;
+    padding-left: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  svg.hamburger {
+    display: block;
+    color: #103444;
+    padding-top: 225px;
+  }
+
+  .menubar-dropdown {
+    display: block;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: -100vh;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    padding-top: 157px;
+  }
+  .menubar-dropdown ul {
+    display: block;
+    list-style: none;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 85px 0 0 0;
+    padding: 0;
+  }
+  .menubar-dropdown ul li {
+    margin: 0;
+    padding: 0;
+  }
+
+  .menubar-dropdown li a {
+    padding: 5px 2px 5px 3px;
+    text-decoration: none;
+    color: #103444;
+    font-family: sans-serif;
+  }
+  .menubar-dropdown li a:hover {
+    color: white;
+  }
+  #toggle:checked ~ .menubar-dropdown {
+    top: 0vh;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: #7f9f8d;
+}
+
+#content {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding-left: 50px;
+}
+
+#content li {
+  float: left;
+  width: 15%;
+  height: 50%;
+  background: #7f9f8d;
+  display: inline-block;
+}
+
+li a {
+  float: left;
+  display: block;
+  color: #103444;
+  text-align: center;
+
+  padding-top: 50px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+a:hover {
+  color: white;
+}
+
+.searchbarlistelement {
+  float: left;
+  display: block;
+  color: #103444;
+  text-align: center;
+  padding-top: 32px;
+  text-decoration: none;
+  font-size: 75px;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+.searchbar {
+  float: right;
+  padding: 10px;
+  padding-left: 25px;
+  width: 150px;
+  height: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  border-radius: 40px 40px 40px 40px;
+}
