@@ -4,16 +4,16 @@
 <head>
     <link rel="stylesheet" href="css/index.css" type="text/css">
     <meta charset="UTF-8">
-    <meta name="description" content="Contact us here">
+    <meta name="description" content="Checkout here">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RainyDays / Contact </title>
+    <title>RainyDays / Checkout </title>
     <script defer src='https://use.fontawesome.com/releases/v5.0.6/js/all.js'> </script>
 </head>
 
 <body class="pages">
-    
 
     <header>
+
         <label for="toggle">
             <i class="fas fa-bars hamburger"></i>
         </label>
@@ -22,7 +22,7 @@
             <li class="searchbarlistelement"> <input class="searchbar" type="text" placeholder="search.."> </li>
         </div>
 
-        <section class="menubar">
+        <nav class="menubar">
             <ul>
                 <div id="content">
                     <li><a class="active" href="./index.html"> Home</a></li>
@@ -33,7 +33,7 @@
                 </div>
             </ul>
 
-        </section>
+        </nav>
         <input type="checkbox" id="toggle" name="toggle">
         <nav class="menubar-dropdown">
             <ul>
@@ -46,10 +46,49 @@
         </nav>
     </header>
 
-    <h1>Contact us</h1>
+    <h1> Checkout </h1>
 
-    <div class="contactuspage">
-        <form class="contactform" action="contactus_success.html">
+
+    <div class="checkoutpage">
+        <div class="checkoutinput">
+            <h2> Shipping information </h2>
+            <label for="firstname"> First name: </label>
+            <input type="text" name="firstname" id="firstname" required>
+            <label for="lastname"> Last name:</label>
+            <input type="text" name="lastname" id="lastname" required>
+            <label for="address"> Address </label>
+            <input type="text" name="address" id="address" required>
+            <label for="phone"> Phone Number:</label>
+            <input type="tel" name="phone" id="phone" required>
+            <label for="email">Email </label>
+            <input type="text" name="email" id="email" required></label>
+        </div>
+
+        <div class="checkoutinput">
+            <h3> Payment </h3>
+            <label for="cardname"> Name on card </label>
+            <input type="text" name="fullname" id="fullname" required></label>
+            <label for="cardnumber"> Card number </label>
+            <input type="text" name="cardnumber" id="cardnumber" required>
+            <label for="expirymonth"> Expiry month</label>
+            <input type="text" name="expirymonth" id="expirymonth" required>
+            <label for="expriryyear"> expiry year</label>
+            <input type="text" name="expiryyear" id="expiryyear">
+            <label for="cvv"> CVV </label>
+            <input type="text" name="cvv" id="cvv">
+        </div>
+        <form action="checkout_success.html">
+            <input type="submit" value="Complete checkout" class="button">
+        </form>
+    </div>
+
+
+
+
+
+
+    <!-- <div class="checkoutpage">
+        <form class="checkoutform" action="checkout_success.html">
             <fieldset class="contactinput">
                 <legend class="details"> Your details</legend>
                 <div class="contactinputfields">
@@ -57,6 +96,8 @@
                     <input type="text" name="firstname" id="firstname" required>
                     <label for="lastname"> Last name:</label>
                     <input type="text" name="lastname" id="lastname" required>
+                    <label for="address" > Address </label>
+                    <input type="text" name="address" id="address" required>
                 </div>
                 <div class="contactinputfields">
                     
@@ -66,27 +107,13 @@
                     <input type="text" name="email" id="email" required></label>
 
                 </div>
+                <div> -->
 
-            </fieldset>
+    <footer>
 
-            <fieldset class="enquirybox">
-                <legend> Your Enquiry </legend>
-                <textarea id="Type your enquiry here" name="Enquiry" rows="20" cols="50"></textarea>
-                <input class="submitbutton" type="submit" value="Submit enquiry">
-            </fieldset>
-
-        </form>
-
-        <div class=cmimage><img src="images/Cutomerservice.png" alt="customerservice"></div>
-    </div>
-
-
-
-
-
-
-
+    </footer>
 </body>
+
 
 
 </html>

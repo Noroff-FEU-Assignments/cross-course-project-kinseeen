@@ -4,23 +4,23 @@
 <head>
     <link rel="stylesheet" href="css/index.css" type="text/css">
     <meta charset="UTF-8">
-    <meta name="description" content="See our jackets here">
+    <meta name="description" content="See your basket here">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RainyDays / Jackets-Green Jacket </title>
+    <title>RainyDays / Basket </title>
     <script defer src='https://use.fontawesome.com/releases/v5.0.6/js/all.js'> </script>
 </head>
 
 <body class="pages">
-    
 
     <header>
+
+        <label for="toggle">
+            <i class="fas fa-bars hamburger"></i>
+        </label>
         <div class="headeritems">
             <img class="logoimage" src="/Images/RainyDays_Logo.png" alt="Rainydays logo">
             <li class="searchbarlistelement"> <input class="searchbar" type="text" placeholder="search.."> </li>
         </div>
-        <label for="toggle">
-            <i class="fas fa-bars hamburger"></i>
-        </label>
 
         <nav class="menubar">
             <ul>
@@ -30,11 +30,10 @@
                     <li><a href="Contactus.html"> Contact</a></li>
                     <li><a href="jackets.html"> Jackets</a></li>
                     <li><a href="basket.html"> Basket</a></li>
-
-
                 </div>
             </ul>
         </nav>
+
         <input type="checkbox" id="toggle" name="toggle">
         <nav class="menubar-dropdown">
             <ul>
@@ -47,44 +46,24 @@
         </nav>
     </header>
 
+    <h1> Basket </h1>
 
-    <h1> Jackets </h1>
-
-    <section class="jacketpage">
-
-        <div class="jacketobject">
-            <img class="jacketimage" src="images/istockphoto-1210366042-612x612 (2).jpg " alt="Green Jacket">
-            <h2> Green Jacket</h2>
-            <p class="price"> 399,- NOK</p>
-            <p2> <a href=jacket1.html>
-                    <p2> <button class="seejacket">See Jacket </button></p2>
-                </a></p2>
-        </div>
-        <div class="jacketobject">
-            <img class="jacketimage" src="images/istockphoto-163208487-612x612.jpg" alt="Red Jacket">
-            <h2> Red Jacket</h2>
-            <p class="price"> 299,- NOK</p>
-            <p2> <button class="seejacket">See Jacket </button></p2>
-        </div>
-        <div class="jacketobject">
-            <img class="jacketimage" src="images/istockphoto-1176083984-612x612.jpg" alt="Blue Jacket">
-            <h2>Blue Jacket</h2>
-            <p class="price"> 399,- NOK</p>
-            <p2> <button class="seejacket">See Jacket </button></p2>
-        </div>
-        <div class="jacketobject">
-            <img class="jacketimage" src="images/istockphoto-868095024-612x612.jpg" alt="Orange Jacket">
-            <h2>Orange Jacket</h2>
-            <p class="price"> 599,- NOK</p>
-            <p2> <button class="seejacket">See Jacket </button></p2>
+    <div class="basketitems">
+        <div class="basketinformation">
+            <img src="images/istockphoto-1210366042-612x612 (2).jpg" alt="Green Jacket">
+            <p class="pricebasket"> 399,- NOK</p>
         </div>
 
-    </section>
+        <div class="basketbuttons">
+            <p2> <a href=checkout.html>
+                    <p2> <button class="checkoutbutton"> Checkout </button></p2>
 
-
-
-
-
+                    <p2> <a href=jackets.html>
+                            <p2> <button class="continueshoppingbutton"> Continue shopping </button> </p2>
+                        </a>
+                    </p2>
+        </div>
+    </div>
 
 </body>
 
