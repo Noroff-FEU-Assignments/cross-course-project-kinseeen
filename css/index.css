@@ -27,7 +27,7 @@ body.pages {
 }
 
 header {
-  background-color: whitesmoke;
+  background-color: white;
   min-height: 20px;
   margin-top: -20px;
   margin-left: -20px;
@@ -174,32 +174,30 @@ ul {
   overflow: hidden;
   background-color: whitesmoke;
   border-bottom: #103444;
-  border-style:dashed;
+  border-style:inset;
 }
 
 #content {
   display: flex;
   justify-content: space-evenly;
-  color: #103444;
 }
 
-#content li {
-  display: flex;
-  flex-wrap: nowrap;
-  padding-bottom: 20px;
-}
 
 li a {
   display: block;
   color: #103444;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left:10px;
+  padding-right:10px;
   text-decoration: none;
   font-size: 25px;
 }
 
 li a:hover {
   background-color: #103444;
+  color: white;
 }
 
 .searchbar {
@@ -402,6 +400,7 @@ input[type="submit"]:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom:40px;
 }
 
 .jacketimage {
