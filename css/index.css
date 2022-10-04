@@ -1,14 +1,11 @@
 body.home {
-  background-image: url("../Images/BackgroundPhoto.jpg");
+  background-color: white;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-footer {
-  background-color: #7f9f8d;
-}
 
 .details {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -30,7 +27,7 @@ body.pages {
 }
 
 header {
-  background-color: #7f9f8d;
+  background-color: whitesmoke;
   min-height: 20px;
   margin-top: -20px;
   margin-left: -20px;
@@ -98,7 +95,6 @@ svg.hamburger {
     list-style: none;
     height: 60vh;
     flex-direction: column;
-    /* align-items: flex-start; */
     justify-content: space-evenly;
     margin: 85px 0 0 0;
     padding: 0;
@@ -176,7 +172,9 @@ ul {
   list-style-type: none;
   margin: 0;
   overflow: hidden;
-  background-color: #7f9f8d;
+  background-color: whitesmoke;
+  border-bottom: #103444;
+  border-style:dashed;
 }
 
 #content {
@@ -201,7 +199,7 @@ li a {
 }
 
 li a:hover {
-  color: white;
+  background-color: #103444;
 }
 
 .searchbar {
@@ -213,10 +211,6 @@ li a:hover {
   font-size: 20px;
   border-radius: 40px;
 }
-
-/* .menubar {
-  display: flex;
-} */
 
 .fieldset {
   display: grid;
