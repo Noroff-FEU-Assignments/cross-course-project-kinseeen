@@ -8,6 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RainyDays / Checkout </title>
     <script defer src='https://use.fontawesome.com/releases/v5.0.6/js/all.js'> </script>
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:3184539,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
 </head>
 
 <body class="pages">
@@ -19,7 +29,7 @@
         </label>
         <div class="headeritems">
             <img class="logoimage" src="/Images/RainyDays_Logo.png" alt="Rainydays logo">
-            
+
         </div>
 
         <nav class="menubar">
@@ -47,71 +57,90 @@
     </header>
 
     <h1> Checkout </h1>
-
-
-    <div class="checkoutpage">
-        <div class="checkoutinput">
+    <main class="checkoutpage">
+        <form id="checkoutinput">
             <h2> Shipping information </h2>
-            <label for="firstname"> First name: </label>
-            <input type="text" name="firstname" id="firstname" required>
-            <label for="lastname"> Last name:</label>
-            <input type="text" name="lastname" id="lastname" required>
-            <label for="address"> Address </label>
-            <input type="text" name="address" id="address" required>
-            <label for="phone"> Phone Number:</label>
-            <input type="tel" name="phone" id="phone" required>
-            <label for="email">Email </label>
-            <input type="text" name="email" id="email" required></label>
-        </div>
-
-        <div class="checkoutinput">
-            <h3> Payment </h3>
-            <label for="cardname"> Name on card </label>
-            <input type="text" name="fullname" id="fullname" required></label>
-            <label for="cardnumber"> Card number </label>
-            <input type="text" name="cardnumber" id="cardnumber" required>
-            <label for="expirymonth"> Expiry month</label>
-            <input type="text" name="expirymonth" id="expirymonth" required>
-            <label for="expriryyear"> expiry year</label>
-            <input type="text" name="expiryyear" id="expiryyear">
-            <label for="cvv"> CVV </label>
-            <input type="text" name="cvv" id="cvv">
-        </div>
-        <form action="checkout_success.html">
-            <input type="submit" value="Complete checkout" class="button">
-        </form>
-    </div>
-
-
-
-
-
-
-    <!-- <div class="checkoutpage">
-        <form class="checkoutform" action="checkout_success.html">
-            <fieldset class="contactinput">
-                <legend class="details"> Your details</legend>
-                <div class="contactinputfields">
-                    <label for="firstname"> First name: </label>
-                    <input type="text" name="firstname" id="firstname" required>
-                    <label for="lastname"> Last name:</label>
-                    <input type="text" name="lastname" id="lastname" required>
-                    <label for="address" > Address </label>
-                    <input type="text" name="address" id="address" required>
+            <div class="labelitem">
+                <label>
+                    First name (Required)
+                    <input name="firstName" id="firstName" placeholder="First Name" />
+                </label>
+                <div class="form-error" id="nameError"> Please enter your first name</div>
+            </div>
+            <div class="labelitem">
+                <label>
+                    Last Name (Required)
+                    <input name="lastName" id="lastName" placeholder="last Name" />
+                </label>
+                <div class="form-error" id="nameError"> Please enter your last name </div>
+            </div>
+            <div class="labelitem">
+                <label>
+                    Address
+                    <input name="address" id="address" placeholder="Your Address" />
+                </label>
+                <div class="form-error" id="addressError"> Please enter your address</div>
+            </div>
+            <div class="labelitem">
+                <label>
+                    Phone number
+                    <input name="phoneNumber" id="phoneNumber" placeholder="Phone Number" />
+                </label>
+                <div class="form-error" id="phoneError"> Please enter your phone number /div>
                 </div>
-                <div class="contactinputfields">
-                    
-                    <label for="phone"> Phone Number:</label>
-                    <input type="tel" name="phone" id="phone" required>
-                    <label for="email">Email </label>
-                    <input type="text" name="email" id="email" required></label>
-
+                <div class="labelitem">
+                    <label>
+                        Email address (Required)
+                        <input name="email" id="email" placeholder="Email address" />
+                    </label>
+                    <div class="form-error" id="emailError"> Please enter a valid email address</div>
                 </div>
-                <div> -->
 
-    <footer>
+                    <h3> Payment </h3>
 
-    </footer>
+                    <div class="labelitem">
+                        <label>
+                            Name on card
+                            <input name="cardName" id="cardName" placeholder="Name" />
+                        </label>
+                        <div class="form-error" id="cardNameError"> Please enter a valid name</div>
+                    </div>
+                    <div class="labelitem">
+                        <label>
+                            Card number
+                            <input name="cardNumber" id="cardNumber" placeholder="Card number" />
+                            <div class="form-error" id="cardNumberError"> Please enter a valid card number</div>
+                        </label>
+                    </div>
+                    <div class="labelitem">
+                        <label>
+                            Expiry date
+                            <input name="exprityDate" id="expiryDate" placeholder="Card expiry date" />
+                        </label>
+                        <div class="form-error" id="expiryDateError"> Please enter a valid expiry date </div>
+                    </div>
+                    <div class="labelitem">
+                        <label>
+                            CVV
+                            <input name="cvv" id="cvv" placeholder="cvv" />
+                        </label>
+                        <div class="form-error" id="cvvError"> Please enter a valid CVV code (3 numbers)</div>
+                    </div>
+
+                    <form action="checkout_success.html">
+                        <button> Complete checkout </button>
+                    </form>
+
+                <script src="../js/checkout.js"></script>
+
+
+
+
+
+
+                <footer>
+
+                </footer>
 </body>
 
 

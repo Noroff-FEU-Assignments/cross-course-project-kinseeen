@@ -6,6 +6,20 @@ body.home {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+button {
+  padding:20px;
+  font-size: 20px;
+  color:white;
+  background-color: #103444;
+}
+
+button:hover {
+  border-radius: 6px;
+  border-color: #103444;
+  background-color: white;
+  color: #103444;
+}
+
 
 .details {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -45,6 +59,10 @@ label[for="toggle"] {
   left: 30px;
 }
 
+.labelitem {
+  padding-top:10px;
+}
+
 .menubar-dropdown {
   display: none;
 }
@@ -53,6 +71,39 @@ label[for="toggle"] {
 }
 svg.hamburger {
   display: none;
+}
+
+.contactUs {
+  display: inline-flex;
+  display: grid;
+  justify-content: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#contactUsForm {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.labelitem {
+    margin-bottom:10px;
+}
+
+.contactitem {
+  padding-top: 10px;
+  display: flex;
+  border-color: black;
+  padding-bottom: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  margin-top: 2px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 700px) {
@@ -368,20 +419,6 @@ input[type="submit"]:hover {
   font-weight: bold;
 }
 
-.seejacket {
-  color: white;
-  background-color: #7a90b1;
-  padding: 10px 15px 10px 15px;
-  font-size: 20px;
-}
-
-.seejacket:hover {
-  color: #d29545;
-  background-color: white;
-  padding: 10px 15px 10px 15px;
-  font-size: 20px;
-}
-
 .jacketobject {
   display: flex;
   flex-direction: column;
@@ -412,25 +449,7 @@ input[type="submit"]:hover {
   display: flex;
 }
 
-.addtobasket {
-  background-color: #7a90b1;
-  border-color: #103444;
-  border-width: 5px;
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 20px;
-  border-radius: 20%;
-  font-size: 20px;
-  /* margin-left: 370px; */
-  margin-top: 30px;
-}
 
-.addtobasket:hover {
-  background-color: white;
-  border-color: #103444;
-  border-width: 5px;
-  color: #d29545;
-}
 
 .p3 {
   font-size: 30px;
@@ -485,63 +504,11 @@ input[type="submit"]:hover {
   padding: 20px;
 }
 
-.checkoutbutton {
-  background-color: #7a90b1;
-  border-color: #103444;
-  border-width: 5px;
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 20px;
-  border-radius: 20%;
-  font-size: 20px;
-  /* margin-left: 370px; */
-  margin-top: 30px;
-}
-
-.continueshoppingbutton {
-  background-color: #7a90b1;
-  border-color: #103444;
-  border-width: 5px;
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 20px;
-  border-radius: 20%;
-  font-size: 20px;
-  /* margin-left: 370px; */
-  margin-top: 30px;
-}
-
-.checkoutbutton:hover {
-  background-color: white;
-  border-color: #103444;
-  border-width: 5px;
-  color: #d29545;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 20px;
-  border-radius: 20%;
-  font-size: 20px;
-  margin-top: 30px;
-}
-
-.continueshoppingbutton:hover {
-  background-color: white;
-  border-color: #103444;
-  border-width: 5px;
-  color: #d29545;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 20px;
-  border-radius: 20%;
-  font-size: 20px;
-  margin-top: 30px;
-}
 
 .checkoutpage {
-  display: flex;
-  margin: 0px;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-between;
+  display:flex;
+  padding:10px;
+  
 }
 
 .checkoutinput {
