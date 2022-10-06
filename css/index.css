@@ -6,6 +6,16 @@ body.home {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.frontPageText {
+  padding-top:200px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size:20px;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
 button {
   padding:20px;
   font-size: 20px;
@@ -508,6 +518,7 @@ input[type="submit"]:hover {
 .checkoutpage {
   display:flex;
   padding:10px;
+  justify-content: center;
   
 }
 
