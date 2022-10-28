@@ -7,6 +7,7 @@ const address = document.querySelector("#address");
 const addressError = document.querySelector("#addressError");
 
 
+ghjghj = [{},{}]
 
 function validateForm(formevent) {
   formevent.preventDefault();

@@ -16,6 +16,25 @@ body.home {
   text-align: center;
 }
 
+
+.jacketInformationBox {
+  padding:30px;
+
+}
+
+.jacketInformation {
+  display:flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  border:#d29545;
+  border-style:outset;
+  padding:10px;
+  font-family:'Times New Roman', Times, serif;
+  font-size:20px;
+}
+
 button {
   padding:20px;
   font-size: 20px;
