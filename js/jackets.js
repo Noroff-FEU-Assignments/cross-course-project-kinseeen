@@ -28,7 +28,12 @@ async function fetchInformation() {
 <div class="jacketInformation"><img class=productImage src="${image}"</img> </class> </div>
 </div>`;
     }
+    const loading = document.querySelector(".loader");
 
+    setTimeout(function () {
+      loading.classList.remove("loader-circle");
+    }, 2000);
+    
     
   } catch (error) {
     resultsContainer.innerHTML = "An error has occured";

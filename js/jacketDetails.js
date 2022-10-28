@@ -21,6 +21,12 @@ async function jacketInformation (test) {
     }
 }
 
+const loading = document.querySelector(".loader");
+
+setTimeout(function () {
+  loading.classList.remove("loader-circle");
+}, 2000);
+
 function createHTML (jacket) {
     detailsContainer.innerHTML = `<h2> ${jacket.name} </h2>
     <div class="jacketInformation"> Price: ${jacket.price} </div>
