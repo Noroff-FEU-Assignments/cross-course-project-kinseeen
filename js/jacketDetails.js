@@ -30,7 +30,7 @@ setTimeout(function () {
 function createHTML (jacket) {
     detailsContainer.innerHTML = `<h2> ${jacket.name} </h2>
     <div class="jacketInformation"> Price: ${jacket.price} </div>
-    <div class="jacketInformation"><img class=productImage src="${jacket.image}"</img> </class> </div>`
+    <div class="jacketInformation"><img class=productImage src="${jacket.images[0].src}"</img> </class> </div>`
 }
 
 

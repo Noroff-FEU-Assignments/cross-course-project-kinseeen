@@ -25,8 +25,7 @@ async function fetchInformation() {
       <div class=jacketInformationBox>
       <div class="jacketInformation"> ${name} </div>
 <div class="jacketInformation"> Price: ${price} </div>
-<div class="jacketInformation"><img class=productImage src="${image}"</img> </class> </div>
-</div>`;
+<div class="jacketInformation"><img class=productImage src="${image}"</img> </class> </div>`;
     }
     const loading = document.querySelector(".loader");
 

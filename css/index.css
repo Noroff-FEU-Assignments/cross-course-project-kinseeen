@@ -6,6 +6,17 @@ body.home {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.jacketContainer {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.resultsContainer {
+  display:flex;
+  justify-content: center;
+  padding:10px;
+}
+
 .frontPageText {
   padding-top:200px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -14,6 +25,12 @@ body.home {
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
+}
+
+.productPage {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-error {
