@@ -18,9 +18,9 @@ Rainy days sells coats for women and men. Their focus group is men and women in 
 Built With
 
 You can list a the tech stack that you've used over here
-
-    React.js
     Bootstrap
+    Visual studio code
+
 
 Getting Started
 Installing
