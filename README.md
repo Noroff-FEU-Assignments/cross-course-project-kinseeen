@@ -19,8 +19,9 @@ Built With
 
 You can list a the tech stack that you've used over here
 
-   Visual studio code
+    React.js
     Bootstrap
+    visual studio code
 
 Getting Started
 Installing
@@ -37,6 +38,7 @@ npm run start
 
 Contributing
 Make sure you open a pull request, so code can be reviewed. 
+
 
 
 Acknowledgments
